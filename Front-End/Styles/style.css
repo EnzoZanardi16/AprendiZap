@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+
+#Cabecalho{
+    background-color: #00072C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 3%;
+    position: fixed;
+    z-index: 100;
+}
+#logo{
+    width: 15%;
+}
+.navegacao{
+    font-size: 1.5vw;
+    color:snow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+.Anav{
+    text-decoration: none;
+    color:snow;
+}
+.Hnav:hover{
+        border: snow 1px solid;
+    padding: 1%;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.icon{
+    font-size: 2.5vw;
+}
