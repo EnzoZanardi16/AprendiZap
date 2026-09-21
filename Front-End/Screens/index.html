@@ -1,0 +1,152 @@
+<!-- Pagina de login - estatico-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AprendiZap - login</title>
+</head>
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.alinhar{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-color: #00072C;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5%;
+}
+img{
+    width: 20%;
+   
+}
+#cab{
+    border-left: 1px snow solid; 
+    color:snow;
+    padding-left: 2%;
+    font-size: 3vw;
+
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+ 
+    
+}
+main{
+    width: 90%;
+    height: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+#linha{
+    border-top: 1px black solid;
+    width: 100%;
+
+}
+form{
+    width: 50%;
+    height: auto;
+    margin: 5%;
+    padding: 1%;
+    border: 3px solid #123498;
+    border-radius: 5px;
+
+}
+fieldset{
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 1%;
+}
+fieldset:hover{
+    border: 5px solid #123498;
+    transition: 0.3s;
+}
+legend{
+    padding: 1%;
+}
+input{
+    font-size: 1.2vw;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: black;
+    outline: none;
+
+}
+#bnt{
+    background-color: #123498;
+    color: snow;
+    padding: 1%;
+    border: none;
+    box-shadow: 1px 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 5%;
+    width: 20%;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+#bnt:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+#links{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    position: fixed;
+    bottom: 1%;
+    left: 46%;
+}
+</style>
+<body class="alinhar">
+    <header>
+        <img src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
+        <h1 id="cab">Acesso</h1>
+    </header>
+    <main class="alinhar">
+        <h1>
+            Autenticação
+        </h1>
+        <div id="linha"></div>
+        <form action="#" class="alinhar">
+            <fieldset>
+                <legend>Digite o RA</legend>
+                <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="RA">
+            </fieldset>
+            <fieldset>
+                <legend>Digite a senha</legend>
+                <input type="password" placeholder="Usuário">
+            </fieldset>
+            <input id="bnt" type="submit">
+            <div id="links">
+            <a href="">Não tem conta? Cadastre-se</a>
+            <a href="">Esqueci minha senha</a>
+            </div>
+            
+        </form>
+        
+    </main>
+    <footer>
+        <p>2026 -  © Grupo nota 10</p>
+    </footer>
+</body>
+</html>
