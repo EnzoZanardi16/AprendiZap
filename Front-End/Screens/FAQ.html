@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AprendiZap</title>
+    <link rel="stylesheet" href="/Front-End/Styles/style.css">
+</head>
+<body>
+    <header id="Cabecalho">
+        <img id="logo" src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
+        <nav class="navegacao">
+            <a href="" class="Anav Hnav"><p class="Tnav">PROFESSORES</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">DISCIPLINA</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">REFORÇO</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">FAQ</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">BLOG</p></a>
+        </nav>
+        <nav class="navegacao">
+            <a href="" class="icon Hnav"><i class="fa-solid fa-user"></i></a>
+            <a href="" class="icon Hnav"><i class="fa-solid fa-envelope"></i></a>
+            <a href="" class="icon Hnav"><i class="fa-solid fa-bell"></i></a>
+            
+        </nav>
+    </header>
+    <script src="https://kit.fontawesome.com/08621cdf64.js" crossorigin="anonymous"></script>
+ 
+    <br><br><br><br><br><br><br><br><br><br>
+<div id="faq" style="text-align: center;">
+
+        <h1>Dúvidas frequentes</h1>
+
+        <p>
+            Sabemos que dúvidas são comuns. Tire todas aqui.
+        </p>
+
+    </div>
+
+
+    <br><br><br>
+
+
+    <!-- MOLDURA PRINCIPAL -->
+
+    <div
+        style="
+            width: 65%;
+            margin: auto;
+            border: 2px solid #123fa3;
+            border-radius: 18px;
+            padding: 35px;
+            box-sizing: border-box;
+        "
+    >
+        <details>
+            <summary>
+                <strong>O que é o AprendiZap?</strong>
+            </summary>
+            <p>
+                O AprendiZap é uma plataforma criada para conectar
+                estudantes que precisam de reforço escolar com
+                professores voluntários dispostos a compartilhar
+                seus conhecimentos.
+            </p>
+        </details>
+        <br>
+        <details>
+            <summary>
+                <strong>Como posso solicitar uma aula de reforço?</strong>
+            </summary>
+            <p>
+                Para solicitar reforço, acesse a opção "Reforço"
+                no menu, preencha os dados solicitados e informe
+                a disciplina e o conteúdo em que precisa de ajuda.
+            </p>
+        </details>
+        <br>
+        <details>
+            <summary>
+                <strong>As aulas são gratuitas?</strong>
+            </summary>
+            <p>
+                A proposta do AprendiZap é conectar estudantes
+                com professores voluntários. As condições do
+                atendimento são apresentadas no momento da
+                solicitação.
+            </p>
+        </details>
+        <br><br>
+        <form>
+
+            <label for="fcom">
+                <strong>
+                    Não encontrou o que precisa?
+                </strong>
+            </label>
+
+            <p>
+                Deixe um comentário e responderemos suas perguntas!
+            </p>
+
+
+            <textarea
+                id="fcom"
+                name="fcom"
+                rows="10"
+                style="
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: 1px solid #123fa3;
+                    border-radius: 8px;
+                    padding: 10px;
+                "
+            ></textarea>
+
+
+            <br><br>
+
+
+            <input
+                type="button"
+                id="bmensagem"
+                value="OK"
+                onclick="alert('Mensagem enviada com sucesso!')"
+            >
+
+
+            <input
+                type="submit"
+                id="bgravar"
+                value="Gravar"
+            >
+
+
+            <input
+                type="reset"
+                id="blimpar"
+                value="Limpar"
+            >
+
+        </form>
+
+    </div>
+    <br><br><br><br>
+</body>
+</html>
