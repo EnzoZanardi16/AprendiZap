@@ -1,0 +1,339 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172344;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#conteudo {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 0 60px;
+}
+
+.intro-pagina {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.intro-pagina h1 {
+    margin: 20px 0 10px;
+    color: #040c38;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.intro-pagina p {
+    margin: 0;
+    color: #5c6680;
+    font-size: 16px;
+}
+
+
+
+.formulario {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #6988ed;
+    border-radius: 8px;
+}
+
+.formulario h2 {
+    margin: 0 0 8px;
+    color: #040c38;
+    font-size: 20px;
+}
+
+.aviso-formulario {
+    margin: 0 0 25px;
+    color: #5c6680;
+    font-size: 14px;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 20px;
+}
+
+.campo {
+    width: 100%;
+}
+
+.campo label,
+.campo legend {
+    display: block;
+    margin-bottom: 6px;
+    color: #040c38;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b1c2ff;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.campo textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #1648ef;
+    outline: none;
+}
+
+.campo-inteiro {
+    grid-column: 1 / 3;
+}
+
+
+fieldset.campo {
+    padding: 0;
+    border: 0;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border: 1px solid #b1c2ff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.opcoes input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+
+.formulario-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.formulario-rodape p {
+    margin: 0;
+
+    color: #5c6680;
+    font-size: 12px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid #1648ef;
+    border-radius: 5px;
+    background-color: #1648ef;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #0634c9;
+    border-color: #0634c9;
+}
+
+.botao-contorno {
+    background-color: white;
+    color: #1648ef;
+}
+
+.botao-contorno:hover {
+    background-color: #eaf0ff;
+}
+
+
+
+.resultado-formulario {
+    display: none;
+    width: 100%;
+    max-width: 760px;
+    margin: 25px auto 0;
+    padding: 25px;
+    border: 1px solid #1648ef;
+    border-radius: 7px;
+    background-color: #eaf0ff;
+}
+
+.resultado-formulario:target {
+    display: block;
+}
+
+.resultado-formulario h2 {
+    margin-top: 0;
+
+    color: #040c38;
+}
+
+
+
+
+.botao {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    border: 1px solid #1648ef;
+    border-radius: 5px;
+
+    background-color: #1648ef;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #0634c9;
+    border-color: #0634c9;
+
+    transform: translateY(-2px);
+}
+
+
+
+.botao-contorno {
+    background-color: white;
+    color: #1648ef;
+}
+
+.botao-contorno:hover {
+    background-color: #eaf0ff;
+    color: #0634c9;
+
+    transform: translateY(-2px);
+}
+
+
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #b1c2ff;
+    border-radius: 4px;
+
+    background-color: white;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+
+
+.campo input:hover,
+.campo select:hover,
+.campo textarea:hover {
+    border-color: #1648ef;
+    background-color: #f8faff;
+}
+
+
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #1648ef;
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 0 2px #eaf0ff;
+}
+
+
+
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border: 1px solid #b1c2ff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.opcoes label:hover {
+    border-color: #1648ef;
+    background-color: #f8faff;
+}
+
+.opcoes input {
+    width: 16px;
+    height: 16px;
+
+    margin: 0;
+}
+
+.campo input:hover,
+.campo select:hover,
+.campo textarea:hover {
+    border-color: #071f6b;
+    box-shadow: 0 0 5px #071f6b;
+}
+
+.campo select {
+    appearance: none;
+}

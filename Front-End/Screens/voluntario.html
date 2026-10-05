@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conheça o formulário demonstrativo para atuar como professor voluntário no AprendiZap.">
+
+    <title>Seja professor voluntário | AprendiZap</title>
+
+    <link rel="stylesheet" href="/Front-End/Styles/style.css">
+    <link rel="stylesheet" href="/Front-End/Styles/voluntarios.css">
+
+    <link rel="icon" type="image/svg+xml" href="/Front-End/Assets/favicon.svg">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="Cabecalho">
+        <img id="logo" src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
+        <nav class="navegacao">
+            <a href="" class="Anav Hnav"><p class="Tnav">PROFESSORES</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">DISCIPLINA</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">REFORÇO</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">FAQ</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">BLOG</p></a>
+        </nav>
+        <nav class="navegacao">
+            <a href="" class="icon Hnav"><i class="fa-solid fa-user" style="color: snow;"></i></a>
+            <a href="" class="icon Hnav"><i class="fa-solid fa-envelope" style="color: snow;"></i></a>
+            <a href="" class="icon Hnav"><i class="fa-solid fa-bell" style="color: snow;"></i></a>
+            
+        </nav>
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main id="conteudo">
+
+        <section class="intro-pagina">
+
+            <h1>QUERO SER PROFESSOR VOLUNTÁRIO</h1>
+
+            <p>
+                Compartilhe conhecimento e ajude alguém a seguir aprendendo.
+            </p>
+
+        </section>
+
+
+        <form class="formulario"
+            id="formulario"
+            action="#conferencia"
+            method="get">
+
+            <h2>CADASTRO DO PROFESSOR VOLUNTÁRIO</h2>
+
+            <p class="aviso-formulario">
+                Preencha os campos e confira as informações.
+                Este formulário é demonstrativo e não envia dados.
+            </p>
+
+
+            <div class="campos">
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+
+                    <input id="nome"
+                        type="text"
+                        maxlength="150"
+                        required
+                        autocomplete="name"
+                        placeholder="Como você se chama?"
+                        pattern=".*\S.*">
+                </div>
+
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+
+                    <input id="email"
+                        type="email"
+                        maxlength="150"
+                        required
+                        autocomplete="email"
+                        placeholder="seuemail@exemplo.com">
+                </div>
+
+
+                <div class="campo">
+                    <label for="telefone">Telefone (opcional)</label>
+
+                    <input id="telefone"
+                        type="tel"
+                        maxlength="150"
+                        autocomplete="tel"
+                        placeholder="(00) 00000-0000">
+                </div>
+
+
+                <div class="campo">
+                    <label for="cidade">Cidade (opcional)</label>
+
+                    <input id="cidade"
+                        type="text"
+                        maxlength="150"
+                        autocomplete="address-level2"
+                        placeholder="Sua cidade">
+                </div>
+
+
+                <div class="campo">
+                    <label for="formacao">Área de formação</label>
+
+                    <input id="formacao"
+                        type="text"
+                        maxlength="150"
+                        required
+                        placeholder="Ex.: Licenciatura em Matemática"
+                        pattern=".*\S.*">
+                </div>
+
+
+                <div class="campo">
+                    <label for="disciplina">Disciplina principal</label>
+
+                    <select id="disciplina" required>
+
+                        <option value="">Selecione</option>
+                        <option value="matematica">Matemática</option>
+                        <option value="portugues">Português</option>
+                        <option value="historia">História</option>
+                        <option value="geografia">Geografia</option>
+                        <option value="ciencias">Ciências</option>
+                        <option value="biologia">Biologia</option>
+                        <option value="fisica">Física</option>
+                        <option value="quimica">Química</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="informatica">Informática</option>
+
+                    </select>
+                </div>
+
+
+                <div class="campo">
+                    <label for="nivel">Nível de ensino</label>
+
+                    <select id="nivel" required>
+
+                        <option value="">Selecione</option>
+                        <option value="fundamental">Ensino Fundamental</option>
+                        <option value="medio">Ensino Médio</option>
+                        <option value="ambos">Fundamental e Médio</option>
+
+                    </select>
+                </div>
+
+
+                <div class="campo">
+                    <label for="modalidade">Modalidade</label>
+
+                    <select id="modalidade" required>
+
+                        <option value="">Selecione</option>
+                        <option value="online">On-line</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="ambos">On-line e presencial</option>
+
+                    </select>
+                </div>
+
+
+                <fieldset class="campo campo-inteiro">
+
+                    <legend>Dias disponíveis (opcional)</legend>
+
+                    <div class="opcoes">
+
+                        <label>
+                            <input type="checkbox" value="Segunda">
+                            Segunda
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Terça">
+                            Terça
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Quarta">
+                            Quarta
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Quinta">
+                            Quinta
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Sexta">
+                            Sexta
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Sábado">
+                            Sábado
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <div class="campo campo-inteiro">
+
+                    <label for="horario">
+                        Horários disponíveis
+                    </label>
+
+                    <input id="horario"
+                        type="text"
+                        maxlength="150"
+                        required
+                        placeholder="Ex.: Segundas e quartas, das 18h às 20h"
+                        pattern=".*\S.*">
+
+                </div>
+
+
+                <div class="campo campo-inteiro">
+
+                    <label for="experiencia">
+                        Experiência e outras disciplinas
+                    </label>
+
+                    <textarea id="experiencia"
+                        rows="4"
+                        maxlength="2000"
+                        required
+                        placeholder="Conte sobre sua experiência, os conteúdos que domina e outras disciplinas que pode ensinar."></textarea>
+
+                </div>
+
+
+                <div class="campo campo-inteiro">
+
+                    <label for="motivacao">
+                        Por que você quer ser voluntário?
+                    </label>
+
+                    <textarea id="motivacao"
+                        rows="4"
+                        maxlength="2000"
+                        required
+                        placeholder="Conte o que motiva você a compartilhar conhecimento."></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="formulario-rodape">
+
+                <p>
+                    Preencha os campos obrigatórios.<br>
+                    Campos indicados como opcionais podem ficar em branco.
+                </p>
+
+                <button type="submit" class="botao">
+                    Conferir preenchimento
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <section class="resultado-formulario" id="conferencia">
+
+            <h2>Preenchimento conferido</h2>
+
+            <p>
+                O navegador conferiu os campos obrigatórios e o formato do
+                e-mail. Este é um formulário de demonstração: nenhum dado
+                foi enviado e nenhum cadastro foi realizado.
+            </p>
+
+            <a href="#formulario" class="botao botao-contorno">
+                Voltar ao formulário
+            </a>
+
+        </section>
+
+    </main>
+
+
+<footer class="rodape">
+    <div class="rodape-conteudo">
+
+        <div class="rodape-apresentacao">
+            <img src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
+
+            <p>
+                Conhecimento que conecta. Pessoas que transformam.
+                Uma comunidade para aprender e compartilhar.
+            </p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h2>Institucional</h2>
+
+            <a href="index.html#sobre">Conheça o projeto</a>
+            <a href="index.html#faq">Perguntas frequentes</a>
+            <a href="voluntario.html">Como participar</a>
+        </div>
+
+        <div class="rodape-coluna">
+            <h2>Aprenda</h2>
+
+            <a href="disciplinas.html">Nossas disciplinas</a>
+            <a href="professores.html">Nossos professores</a>
+            <a href="solicitar.html">Solicitar reforço</a>
+            <a href="blog.html">Blog e artigos</a>
+        </div>
+
+        <div class="rodape-coluna">
+            <h2>Informações</h2>
+
+            <p>
+                Os formulários são demonstrativos. Os dados digitados
+                não são enviados nem armazenados pelo projeto.
+            </p>
+
+            <p>
+                Projeto acadêmico demonstrativo. Perfis, vagas,
+                indicadores e depoimentos são ilustrativos.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="rodape-final">
+        AprendiZap · Projeto acadêmico demonstrativo ·
+        Aprender é melhor quando é para todos.
+    </div>
+</footer>
+
+</body>
+
+</html>
