@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Preencha e revise uma solicitação demonstrativa de reforço escolar no AprendiZap.">
+  <meta name="theme-color" content="#040c38">
+  <title>Solicitação de reforço | AprendiZap</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%229%22%20fill%3D%22%23040c38%22/%3E%3Cpath%20d%3D%22M6%2015%2020%208l14%207-14%207Z%22%20fill%3D%22%2359e8ff%22/%3E%3Cpath%20d%3D%22M11%2021v8q9%206%2018%200v-8%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <!-- Cabeçalho: altere os links aqui para adicionar outras páginas. -->
+  <header class="cabecalho">
+    <div class="container barra">
+      <a class="logo" href="index.html" aria-label="AprendiZap — página inicial"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 14 20 6l17 8-17 8Z"/><path d="M10 18v11c6 5 14 5 20 0V18M36 15v13M33 31h6"/></svg><span>Aprendi<em>Zap</em></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      <nav class="navegacao" id="menu-principal" aria-label="Navegação principal"><a href="index.html">Início</a>
+<a href="professores.html">Professores</a>
+<a href="disciplinas.html">Disciplinas</a>
+<a href="blog.html">Blog e artigos</a>
+<a href="voluntario.html">Seja voluntário</a></nav>
+      <a class="atalho-reforco" href="solicitar.html">Preciso de reforço</a>
+    </div>
+  </header>
+  <main id="conteudo" class="pagina container"><div class="intro-pagina "><h1>SOLICITAÇÃO DE REFORÇO</h1><p>Conte em qual conteúdo você precisa de uma ajuda.</p></div><form class="formulario" data-demo-form="reforco"><h2>DADOS DA SOLICITAÇÃO</h2><p class="aviso-formulario">Formulário demonstrativo. Preencha e revise as informações, sem envio de dados.</p><div class="campos"><div class="campo"><label for="nome">Nome do aluno</label><input id="nome" name="nome" type="text" maxlength="150" required autocomplete="name" placeholder="Nome completo"></div><div class="campo"><label for="email">E-mail do aluno ou responsável</label><input id="email" name="email" type="email" maxlength="150" required autocomplete="email" placeholder="seuemail@exemplo.com"></div><div class="campo"><label for="nivel">Nível de ensino</label><select id="nivel" name="nivel" required><option value="">Selecione</option><option value="fundamental">Ensino Fundamental</option><option value="medio">Ensino Médio</option><option value="outro">Outro</option></select></div><div class="campo"><label for="disciplina">Disciplina</label><select id="disciplina" name="disciplina" required><option value="">Selecione</option><option value="matematica">Matemática</option><option value="portugues">Português</option><option value="historia">História</option><option value="geografia">Geografia</option><option value="ciencias">Ciências</option><option value="biologia">Biologia</option><option value="fisica">Física</option><option value="quimica">Química</option><option value="ingles">Inglês</option><option value="informatica">Informática</option></select></div><div class="campo"><label for="telefone">Telefone (opcional)</label><input id="telefone" name="telefone" type="tel" maxlength="150" autocomplete="tel" placeholder="(00) 00000-0000"></div><div class="campo"><label for="modalidade">Modalidade</label><select id="modalidade" name="modalidade" required><option value="">Selecione</option><option value="online">On-line</option><option value="presencial">Presencial</option><option value="indiferente">Sem preferência</option></select></div><div class="campo"><label for="professor">Professor de preferência (opcional)</label><select id="professor" name="professor"><option value="">Sem preferência</option><option value="ana">Ana Oliveira — Matemática</option><option value="mariana">Mariana Santos — Português e Redação</option><option value="lucas">Lucas Pereira — Física e Química</option><option value="rafael">Rafael Costa — Ciências e Biologia</option></select></div><div class="campo"><label for="cidade">Cidade (opcional)</label><input id="cidade" name="cidade" type="text" maxlength="150" autocomplete="address-level2" placeholder="Sua cidade"></div><fieldset class="campo campo-inteiro"><legend>Dias disponíveis (opcional)</legend><div class="opcoes"><label><input type="checkbox" name="dias" value="Segunda">Segunda</label><label><input type="checkbox" name="dias" value="Terça">Terça</label><label><input type="checkbox" name="dias" value="Quarta">Quarta</label><label><input type="checkbox" name="dias" value="Quinta">Quinta</label><label><input type="checkbox" name="dias" value="Sexta">Sexta</label><label><input type="checkbox" name="dias" value="Sábado">Sábado</label></div></fieldset><div class="campo campo-inteiro"><label for="horario">Período disponível</label><select id="horario" name="horario" required><option value="">Selecione</option><option value="manha">Manhã</option><option value="tarde">Tarde</option><option value="noite">Noite</option></select></div><div class="campo campo-inteiro"><label for="dificuldade">Em que você precisa de ajuda?</label><textarea id="dificuldade" name="dificuldade" rows="4" maxlength="2000" required placeholder="Ex.: Tenho dificuldade em resolver equações do primeiro grau."></textarea></div></div><div class="formulario-rodape"><p>Preencha os campos obrigatórios.<br>Campos indicados como opcionais podem ficar em branco.</p><button type="submit" class="botao" disabled>Revisar solicitação</button></div></form><section class="resultado-formulario" id="resultado" hidden tabindex="-1" aria-labelledby="titulo-resultado"><h2 id="titulo-resultado">Solicitação pronta para revisão</h2><p>Confira as informações abaixo. Esta é uma demonstração: seus dados <strong>não foram enviados nem armazenados</strong>.</p><dl data-form-summary></dl><button type="button" class="botao botao-contorno" data-edit-form>Continuar editando</button></section><noscript><p class="nota centralizar">Ative o JavaScript para usar a revisão do formulário. Não há envio de dados nesta versão.</p></noscript></main>
+  <!-- Rodapé compartilhado: todos os links apontam para conteúdo deste projeto. -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div class="rodape-apresentacao">
+          <a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 14 20 6l17 8-17 8Z"/><path d="M10 18v11c6 5 14 5 20 0V18M36 15v13M33 31h6"/></svg><span>Aprendi<em>Zap</em></span></a>
+          <p>Conhecimento que conecta. Pessoas que transformam. Uma comunidade para aprender e compartilhar.</p>
+        </div>
+        <div><h2>Institucional</h2><ul><li><a href="index.html#sobre">Conheça o projeto</a></li><li><a href="index.html#faq">Perguntas frequentes</a></li><li><a href="voluntario.html">Como participar</a></li></ul></div>
+        <div><h2>Aprenda</h2><ul><li><a href="disciplinas.html">Nossas disciplinas</a></li><li><a href="professores.html">Nossos professores</a></li><li><a href="solicitar.html">Solicitar reforço</a></li><li><a href="blog.html">Blog e artigos</a></li></ul></div>
+        <div><h2>Informações</h2><details><summary>Privacidade</summary><p>Os formulários são demonstrativos. Os dados digitados não são enviados nem armazenados pelo projeto.</p></details><details><summary>Sobre esta versão</summary><p>Projeto acadêmico inspirado no layout enviado. Perfis, vagas, indicadores e depoimentos são ilustrativos; não representam um serviço de atendimento ativo.</p></details></div>
+      </div>
+      <div class="rodape-final">AprendiZap · Projeto acadêmico demonstrativo · Aprender é melhor quando é para todos.</div>
+    </div>
+  </footer>
+</body>
+</html>

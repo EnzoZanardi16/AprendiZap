@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AprendiZap</title>
+    <link rel="stylesheet" href="/Front-End/Styles/style.css">
+</head>
+<body>
+    <header id="Cabecalho">
+        <img id="logo" src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
+        <nav class="navegacao">
+            <a href="" class="Anav Hnav"><p class="Tnav">PROFESSORES</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">DISCIPLINA</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">REFORÇO</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">FAQ</p></a>
+            <a href="" class="Anav Hnav"><p class="Tnav">BLOG</p></a>
+        </nav>
+        <nav class="navegacao">
+            <a href="" class="icon Hnav"><i class="fa-solid fa-user"></i></a>
+            <a href="" class="icon Hnav"><i class="fa-solid fa-envelope"></i></a>
+            <a href="" class="icon Hnav"><i class="fa-solid fa-bell"></i></a>
+            
+        </nav>
+    </header>
+    <script src="https://kit.fontawesome.com/08621cdf64.js" crossorigin="anonymous"></script>
+
+    <main>
+        <section class="introducao">
+            <h1>PROFESSORES VOLUNTÁRIOS</h1>
+            <p>Encontre professores e profissionais voluntários disponíveis para apoiar seus estudos.</p>
+        </section>
+
+        <section class="filtros">
+            <form class="form-filtros" action="#" method="get">
+                <input class="campo-busca" type="text" name="busca" placeholder="Buscar por nome ou disciplina">
+
+                <select name="area" class="campo-selecao">
+                    <option>Área de formação</option>
+                    <option>Matemática</option>
+                    <option>Letras</option>
+                    <option>Ciências Biológicas</option>
+                    <option>Física</option>
+                </select>
+
+                <select name="nivel" class="campo-selecao">
+                    <option>Nível de ensino</option>
+                    <option>Ensino Fundamental</option>
+                    <option>Ensino Médio</option>
+                    <option>Ensino Superior</option>
+                </select>
+
+                <select name="disp" class="campo-disponibilidade">
+                    <option>Disponibilidade</option>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </form>
+        </section>
+
+        <section class="professores" id="professores">
+            <div class="titulo-lista">
+                <h2>PROFESSORES DISPONÍVEIS</h2>
+                <p>Perfis de voluntários cadastrados na plataforma</p>
+            </div>
+
+            <div class="linha-professores">
+                <div class="cartao-professor">
+                    <img class="foto-professor" src="/Front-End/Assets/Aba_Professores 2.png" alt="Professora Juliana Ferreira">
+                    <div class="dados-professor">
+                        <h3>Juliana Ferreira</h3>
+                        <p><b>Área de formação:</b> Ciências Biológicas</p>
+                        <p><b>Disciplinas que dá aula:</b> Ciências e Biologia</p>
+                        <p><b>Nível de ensino:</b> Licenciatura em Ciências Biológicas</p>
+                        <p>Professora acolhedora e objetiva, busca aproximar os conteúdos científicos da realidade dos estudantes.</p>
+                        <p><b>Experiência ou especialidades:</b> Biologia geral, genética, ecologia e preparação para avaliações.</p>
+                        <p class="disponibilidade"><b>Disponibilidade:</b> Terça e sexta, das 16h às 20h</p>
+                        <a class="botao-perfil">VER PERFIL</a>
+                    </div>
+                </div>
+
+                <div class="cartao-professor">
+                    <img class="foto-professor" src="/Front-End/Assets/Aba_Professores 3.png" alt="Professora Mariana Lopes">
+                    <div class="dados-professor">
+                        <h3>Mariana Lopes</h3>
+                        <p><b>Área de formação:</b> Letras - Português</p>
+                        <p><b>Disciplinas que dá aula:</b> Português, Redação e Literatura</p>
+                        <p><b>Nível de ensino:</b> Ensino Superior Completo - Licenciatura em Letras</p>
+                        <p>Professora comunicativa, com foco no desenvolvimento da leitura, escrita e interpretação de textos de forma clara e acessível.</p>
+                        <p><b>Experiência ou especialidades:</b> Gramática, literatura e preparação para vestibulares.</p>
+                        <p class="disponibilidade"><b>Disponibilidade:</b> Terça e quinta, das 14h às 18h</p>
+                        <a class="botao-perfil">VER PERFIL</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="linha-professores linha-baixo">
+                <div class="cartao-professor">
+                    <img class="foto-professor" src="/Front-End/Assets/Aba_Professores 4.png" alt="Professor Carlos Henrique">
+                    <div class="dados-professor">
+                        <h3>Carlos Henrique</h3>
+                        <p><b>Área de formação:</b> Matemática</p>
+                        <p><b>Disciplinas que dá aula:</b> Matemática e Estatística</p>
+                        <p><b>Nível de ensino:</b> Ensino Superior Completo - Licenciatura em Matemática</p>
+                        <p>Professor dedicado e paciente, busca tornar a matemática mais simples e prática, ajudando os alunos a desenvolverem confiança na resolução de exercícios.</p>
+                        <p><b>Experiência ou especialidades:</b> Reforço escolar, álgebra, geometria e preparação para provas.</p>
+                        <p class="disponibilidade"><b>Disponibilidade:</b> Segunda e quarta, das 18h às 21h</p>
+                        <a class="botao-perfil">VER PERFIL</a>
+                    </div>
+                </div>
+
+                <div class="cartao-professor">
+                    <img class="foto-professor" src="/Front-End/Assets/Professor Sorridente na Sala de Aula.png" alt="Professor Rafael Martins">
+                    <div class="dados-professor">
+                        <h3>Rafael Martins</h3>
+                        <p><b>Área de formação:</b> Física</p>
+                        <p><b>Disciplinas que dá aula:</b> Física e Matemática</p>
+                        <p><b>Nível de ensino:</b> Ensino Superior Completo - Licenciatura em Física</p>
+                        <p>Professor objetivo e dedicado, busca aproximar os conteúdos científicos da realidade dos estudantes.</p>
+                        <p><b>Experiência ou especialidades:</b> Mecânica, cinemática, eletricidade e resolução de exercícios.</p>
+                        <p class="disponibilidade"><b>Disponibilidade:</b> Segunda, quarta e sexta, das 19h às 21h</p>
+                        <a class="botao-perfil">VER PERFIL</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chamada-voluntario">
+            <div class="texto-chamada">
+                <h2>QUER SER UM PROFESSOR VOLUNTÁRIO?</h2>
+                <p>Compartilhe seus conhecimentos e disponibilize horários para apoiar estudantes da comunidade.</p>
+            </div>
+            <a class="botao-voluntario">QUERO SER VOLUNTÁRIO</a>
+        </section>
+    </main>
+
+    </footer>
+</body>
+</html>
