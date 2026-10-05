@@ -8,14 +8,195 @@ main{
 }
 #conteudo01{
     width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+#conteudo01-aside{
+    border: 3px solid #123498;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 48%;
+    height: 70vh;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.texto-apresentacao{
+    text-align: justify;
+    line-height: 1.25;
+}
+.indicadores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 2%;
+    text-align: center;
+}
+.indicador{
+    width: 49%;
+}
+.indicador h2{
+    font-size: 12px;
+}
+.indicador p{
+    color: #00072C;
+    font-size: 4vw;
+    font-weight: bold;
+}
+#Banner-informativo{
+    width: 30.5%;
+    height: auto;
+    border-radius: 10px;
+}
+.area-conteudo{
+    width: 88%;
+    margin: 6% auto;
+    text-align: center;
+}
+.area-conteudo h1{
+    color: #00072C;
+    font-size: 28px;
+}
+.subtitulo{
+    margin: -4px 0 34px;
+    font-size: 13px;
+}
+.lista-cartoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2%;
+}
+.cartao{
+    box-sizing: border-box;
+    width: 23.5%;
+}
+.cartao img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid #123498;
+    border-radius: 15px;
+}
+.cartao h2{
+    margin-top: 5px;
+    color: #123498;
+    font-size: 2vw;
+    
+}
+.cartao-professor h2{
+    margin-top: 5px;
+    font-size: 2vw;
+}
+.cartao-professor p{
+    font-size: 12px;
+}
+.botao-mais{
+    margin-top: 30px;
+    padding: 5px 16px;
+    border: 3px solid #123498;
+    border-radius: 8px;
+    background-color: white;
+    color: #00072C;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+.secao-comunidade{
+    width: 88%;
+    margin: 6% auto;
+}
+.bloco-informativo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 4%;
+}
+.bloco-informativo img{
+    width: 48%;
+    height: auto;
+    border-radius: 10px;
+}
+.texto-informativo{
+    width: 48%;
+    text-align: justify;
+    line-height: 1.5;
+}
+.texto-informativo h2{
+    margin-bottom: 10px;
+    color: #00072C;
+    text-align: left;
+}
+.texto-informativo a{
+    color: #00072C;
+    font-weight: bold;
+}
+.perguntas-frequentes{
+    width: 72%;
+    margin: 6% auto;
+}
+.perguntas-frequentes h1{
+    margin-bottom: 24px;
+    color: #00072C;
+    text-align: center;
+}
+.pergunta-frequente{
+    margin-bottom: 8px;
+}
+.pergunta-frequente select{
+    width: 100%;
+    padding: 12px 2%;
+    border: 3px solid #123498;
+    border-radius: 8px;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+.pergunta-frequente select:hover{
+    background-color: #f2f5ff;
+}
+
+.pergunta_freq {
+appearance: none;
+}
+.secao-blog{
+    width: 76%;
+    margin: 6% auto;
+    text-align: center;
+}
+.secao-blog h1{
+    margin-bottom: 24px;
+    color: #00072C;
+    font-size: 28px;
+}
+
+.artigo-blog{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 2%;
+    border: 3px solid #123498;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 1%;
 }
-#conteudo01-aside{
-    border: 2px solid #00072C;
-    width: 30%;
-    height: 80vh;
+.artigo-blog img{
+    width: 16%;
+    height: auto;
+    border-right: 3px solid #123498;
+    border-radius: 5px;
+}
+.artigo-blog h2{
+    color: #00072C;
+    font-size: 18px;
+}
+.artigo-blog p{
+    font-size: 14px;
 }
