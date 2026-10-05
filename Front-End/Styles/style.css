@@ -1,9 +1,14 @@
+
+@font-face {
+    font-family: 'poppins';
+    src: url('/Front-End/Assets/Poppins/Poppins-Regular.ttf');
+}
+
 *{
     margin: 0%;
     padding: 0%;
-    
+    font-family: 'poppins';
 }
-
 
 #Cabecalho{
     background-color: #00072C;
