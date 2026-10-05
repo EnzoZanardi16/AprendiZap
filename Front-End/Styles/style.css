@@ -19,9 +19,11 @@
     position: fixed;
     z-index: 100;
 }
+
 #logo{
     width: 15%;
 }
+
 .navegacao{
     font-size: 1.5vw;
     color:snow;
@@ -31,20 +33,24 @@
     align-items: center;
     gap: 5%;
 }
+
 .Anav{
     text-decoration: none;
     color:snow;
 }
+
 .Hnav:hover{
-        border: snow 1px solid;
+    border: snow 1px solid;
     padding: 1%;
     transition: 0.5s;
     border-radius: 5px;
 }
+
 .icon{
     font-size: 2.5vw;
 }
 
+<<<<<<< HEAD
 
 /* ---------------------------------------------- */
 

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Reforço - AprendiZap</title>
+    <link rel="stylesheet" href="/Front-End/Styles/style.css">
+</head>
+
+<body>
+
+    <header id="Cabecalho">
+
+        <img id="logo" src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
+
+        <nav class="navegacao">
+
+            <a href="" class="Anav Hnav">
+                <p class="Tnav">PROFESSORES</p>
+            </a>
+
+            <a href="" class="Anav Hnav">
+                <p class="Tnav">DISCIPLINA</p>
+            </a>
+
+            <a href="" class="Anav Hnav">
+                <p class="Tnav">REFORÇO</p>
+            </a>
+
+            <a href="" class="Anav Hnav">
+                <p class="Tnav">FAQ</p>
+            </a>
+
+            <a href="" class="Anav Hnav">
+                <p class="Tnav">BLOG</p>
+            </a>
+
+        </nav>
+
+        <nav class="navegacao">
+
+            <a href="" class="icon Hnav">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="" class="icon Hnav">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="" class="icon Hnav">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+
+        </nav>
+
+    </header>
+
+    <div id="titulo-reforco">
+
+        <h1>Solicitação de Reforço</h1>
+
+        <p>
+            Preencha as informações abaixo para solicitar uma aula de reforço.
+        </p>
+
+    </div>
+
+    <div class="caixa-reforco">
+
+        <form>
+
+            <div class="linha-formulario">
+
+                <div class="campo-reforco">
+
+                    <label for="nome">
+                        <strong>Nome completo</strong>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                    >
+
+                </div>
+
+                <div class="campo-reforco">
+
+                    <label for="email">
+                        <strong>E-mail</strong>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="linha-formulario">
+
+                <div class="campo-reforco">
+
+                    <label for="disciplina">
+                        <strong>Disciplina</strong>
+                    </label>
+
+                    <select id="disciplina" name="disciplina">
+
+                        <option>Selecione uma disciplina</option>
+                        <option>Matemática</option>
+                        <option>Português</option>
+                        <option>Física</option>
+                        <option>Ciências</option>
+
+                    </select>
+
+                </div>
+
+                <div class="campo-reforco">
+
+                    <label for="nivel">
+                        <strong>Nível de ensino</strong>
+                    </label>
+
+                    <select id="nivel" name="nivel">
+
+                        <option>Selecione seu nível</option>
+                        <option>Ensino Fundamental</option>
+                        <option>Ensino Médio</option>
+                        <option>Ensino Superior</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="campo-reforco campo-inteiro">
+
+                <label for="conteudo">
+                    <strong>Conteúdo que precisa de ajuda</strong>
+                </label>
+
+                <input
+                    type="text"
+                    id="conteudo"
+                    name="conteudo"
+                >
+
+            </div>
+
+            <div class="linha-formulario">
+
+                <div class="campo-reforco">
+
+                    <label for="data">
+                        <strong>Data desejada</strong>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="data"
+                        name="data"
+                    >
+
+                </div>
+
+                <div class="campo-reforco">
+
+                    <label for="horario">
+                        <strong>Horário desejado</strong>
+                    </label>
+
+                    <input
+                        type="time"
+                        id="horario"
+                        name="horario"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="campo-reforco campo-inteiro">
+
+                <label for="descricao">
+                    <strong>Conte um pouco sobre sua dificuldade</strong>
+                </label>
+
+                <textarea
+                    id="descricao"
+                    name="descricao"
+                    rows="7">
+                </textarea>
+
+            </div>
+
+            <div class="botoes-reforco">
+
+                <input
+                    type="submit"
+                    id="benviar-reforco"
+                    value="Solicitar Reforço"
+                >
+
+                <input
+                    type="reset"
+                    id="blimpar-reforco"
+                    value="Limpar"
+                >
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer id="rodape">
+
+        <img
+            src="/Front-End/Assets/Logo-principal.png"
+            alt="Logo AprendiZap"
+            class="logo-rodape"
+        >
+
+        <div class="rodape-coluna">
+
+            <h3>AprendiZap</h3>
+
+            <p>Professores</p>
+            <p>Disciplinas</p>
+            <p>Reforço</p>
+
+        </div>
+
+        <div class="rodape-coluna">
+
+            <h3>Informações</h3>
+
+            <p>FAQ</p>
+            <p>Blog</p>
+            <p>Contato</p>
+
+        </div>
+
+        <div class="rodape-coluna">
+
+            <h3>Redes sociais</h3>
+
+            <p>Instagram</p>
+            <p>Facebook</p>
+
+        </div>
+
+    </footer>
+
+    <script
+        src="https://kit.fontawesome.com/08621cdf64.js"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
