@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.home li:hover{
+    text-decoration: underline rgb(1, 247, 21);
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    color: black;
+    font-family: Arial;
+}
+
+header {
+    width: 100%;
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.6% 0;
+}
+
+.logo {
+    margin-left: 9.375%;
+}
+
+.logo img {
+    display: block;
+}
+
+nav {
+    width: 27.5%;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 125%;
+}
+
+.capa {
+    background-color: black;
+}
+
+.capa img {
+    width: 100%;
+}
+
+.sobre {
+    width: 100%;
+    background-color: white;
+    padding: 2.86% 0 3%;
+}
+
+.sobre h1 {
+    font-size: 625%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4.69%;
+}
+
+.sobre-conteudo {
+    width: 73.44%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna-esquerda {
+    width: 47.16%;
+}
+
+.coluna-direita {
+    width: 47.16%;
+}
+
+.sobre h2 {
+    font-size: 287.5%;
+    font-weight: bold;
+}
+
+.formacoes-lista {
+    width: 74.59%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.82%;
+}
+
+.formacao {
+    width: 47.38%;
+    text-align: center;
+}
+
+.formacao img {
+    width: 83.83%;
+    height: auto;
+}
+
+.formacao h3 {
+    font-size: 125%;
+    font-weight: bold;
+    margin-top: 5.11%;
+}
+
+.formacao p {
+    font-size: 125%;
+    margin-top: 5.53%;
+}
+
+.habilidades {
+    margin-top: 12.78%;
+}
+
+.habilidades ul {
+    margin-top: 2.41%;
+    padding-left: 6.02%;
+}
+
+.habilidades li {
+    font-size: 162.5%;
+    margin-bottom: 2.56%;
+}
+
+.programas-lista {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.06%;
+}
+
+.programa {
+    width: 18.05%;
+    text-align: center;
+}
+
+.programa img {
+    width: 80.83%;
+    aspect-ratio: 1;
+    height: auto;
+}
+
+.programa p {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.experiencias {
+    margin-top: 18.05%;
+}
+
+.experiencias h2 {
+    margin-bottom: 3.61%;
+}
+
+.experiencias h3 {
+    font-size: 162.5%;
+    font-weight: bold;
+    margin-bottom: 1.95%;
+}
+
+.experiencias p {
+    font-size: 162.5%;
+    margin-bottom: 1.2%;
+}
+
+.contato {
+    width: 51.56%;
+    margin: 2.86% auto 0;
+}
+
+.contato h2 {
+    font-size: 331.25%;
+    text-align: center;
+    margin-bottom: 6.57%;
+}
+
+.contato-lista {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato-card {
+    width: 45.15%;
+    aspect-ratio: 3.55;
+    background-color: #f6f6f6;
+    border-radius: 3.36%;
+    box-shadow: 0 0.25em 0.25em #999999;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.contato-card img {
+    width: 19.46%;
+    height: auto;
+    margin-left: 13.42%;
+    margin-right: 4.92%;
+}
+
+.contato-card p {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.projetos {
+    width: 100%;
+    background-color: black;
+    background-image: url("/assests/projects-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% auto;
+    padding: 6.25% 0 8%;
+}
+
+.projetos h1 {
+    color: white;
+    font-size: 625%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.galeria {
+    width: 86.25%;
+    margin: 11.98% auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna-projetos {
+    width: 47.52%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-projetos img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 3.81%;
+    margin-bottom: 11.82%;
+}
+
+@media (max-width: 50em) {
+    body {
+        font-size: 75%;
+    }
+
+    .sobre-conteudo {
+        width: 88%;
+        flex-direction: column;
+        gap: 8%;
+    }
+
+    .coluna-esquerda,
+    .coluna-direita {
+        width: 100%;
+    }
+
+    .formacoes-lista {
+        width: 100%;
+    }
+
+    .contato {
+        width: 88%;
+    }
+
+    .contato-lista {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .contato-card {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .galeria {
+        width: 88%;
+        margin-top: 8%;
+        gap: 4%;
+    }
+
+    .coluna-projetos {
+        width: 48%;
+    }
+}
+
+@media (max-width: 30em) {
+    body {
+        font-size: 62.5%;
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    .galeria {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .coluna-projetos {
+        width: 100%;
+    }
+}

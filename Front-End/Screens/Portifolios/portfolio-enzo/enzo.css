@@ -1,0 +1,253 @@
+/*EXPLICAÇÕES
+ - backdrop aplica um efeito no fundo do elemento, nesse caso to aplicando um desfoque no elemento
+ - z-index foi utilizado para contrtolar as "camadas" dos elemento permitindo colocar um por cima do outro
+ - scaleY muda escala de um elemento na vertical, usei pra deixar os textos esticados
+ - aqui abaixo o @font-face usei pra importar uma fontezinha, eu perguntei pra professora e ela deixou então usei 
+*/
+
+
+@font-face {
+    font-family: 'fira-code';
+    src: url('./Assets/Fira_Code/FiraCode-VariableFont_wght.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url(./Assets/Fundo.jpg);
+    margin-left: 5%;
+    margin-right: 5%;
+    color: snow;
+    height: auto;
+}
+.blur{
+    backdrop-filter: blur(10px); 
+    padding: 1%;
+    margin-bottom: 2%;
+    padding-top: 0.5%;
+}
+header{
+    margin-top: 1%;
+    
+}
+#topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    padding-top: 0.5%;
+}
+.area_titulo{
+    padding: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+    
+}
+#titulo_principal{
+    margin: 0;
+    font-size: 13vw;
+    display: inline-block;
+    transform: scaleY(3);
+    transform-origin: center;
+}
+.titulo-secundario{
+    font-family: 'fira-code';
+}
+#conteudos_laterais{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+#dizeres{
+    font-size: 32pt;
+}
+#textinho{
+    font-size: 15pt;
+    max-width: 50%;
+    margin-left: 40%;
+}
+#pai_textinho{
+    display: flex;
+    justify-content: end;
+}
+#eu{
+    height: 29.3%;
+    position:fixed;
+    left: 36%;
+    top:4.5%;
+    
+}
+
+main{
+    border: 1px gray solid;
+    height: 100vh;
+    
+
+}
+#caixa_prtojetos_titulos{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#projetos_caixa{
+    display: flex;
+    justify-content: space-around;
+    height: 55%;
+    
+}
+.projeto{
+    border: 1px gray solid;
+    width: 40%;
+    height: 85%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.menu-projeto{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.topico{
+    background-color: gray;
+    padding: 2%;
+    width: 25%;
+    text-align: center;
+    border-radius: 5px;
+}
+.projeto-img{
+    width: 90%;
+    position: relative;
+    margin: 5%;
+}
+.projeto-img:hover{
+    transition: 0.5s;
+    transform: scale(1.5);
+    z-index: 10;
+}
+.topico:hover{
+    transition: 0.3s;
+    background-color: black;
+    color: red;
+}
+#habilidades_caixa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: -2% ;
+    height: 41.5%;
+    
+}
+.ponto{
+    font-size: 18pt;
+    border-radius: 5px;
+    font-family: 'fira-code';
+}
+.semideia{
+    font-size: 12pt;
+    
+}
+#ferramentas_pai{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.ferramentas_menu{
+    width: 50%;
+    margin: 2%;
+    list-style: none;
+    
+}
+.ferramenta:hover{
+    background-color: darkgray;
+    transition: 0.3s;
+}
+p{
+    font-family: 'fira-code';
+}
+a{
+    text-decoration: none;
+    color: snow;
+}
+h3{
+    
+    font-family: 'fira-code';
+}
+#Laravel{
+    width: 30%;
+}
+.ferramenta{
+    font-size: 16pt;
+    display:flex;
+    background-color: black;
+    border: 1px rgba(128, 128, 128, 0.274) solid;
+    width: 100%;
+    padding: 1%;
+    border-radius: 5px;
+    margin: 10%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'fira-code';
+}
+#acabou_ideia_de_id{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-right: 10%;
+}
+
+footer{
+    border: 1px gray solid;
+    margin-bottom: 5%;
+    
+}
+.contato{
+    padding: 1%;
+    font-family: 'fira-code';
+    width: 50%;
+    text-align: center;
+    font-size: 18pt;
+    
+    
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+#contatinho{
+    margin-top: 6%;
+}
+#Final{
+    text-align: center;
+    font-family: 'fira-code';
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#eu2{
+    width: 20%;
+    border-radius: 5px;
+    border: black 5px solid;
+}
+.estica{
+    transform: scaleY(2.5);
+    font-size: 50pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
