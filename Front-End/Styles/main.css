@@ -107,6 +107,15 @@ main{
     color: #00072C;
     font-size: 1.3vw;
     font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.botao-mais:hover,
+.botao-mais:focus-visible{
+    border-color: #00072C;
+    background-color: #123498;
+    color: white;
+    transform: translateY(-2px);
 }
 .secao-comunidade{
     width: 88%;
@@ -138,6 +147,11 @@ main{
 .texto-informativo a{
     color: #00072C;
     font-weight: bold;
+    transition: color 0.2s;
+}
+.texto-informativo a:hover,
+.texto-informativo a:focus-visible{
+    color: #123498;
 }
 .perguntas-frequentes{
     width: 72%;
@@ -157,10 +171,12 @@ main{
     border: 3px solid #123498;
     border-radius: 8px;
     background-color: white;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 .pergunta-frequente select:hover{
     background-color: #f2f5ff;
+    border-color: #123498;
+    box-shadow: 0 0 5px rgb(18 52 152 / 25%);
 }
 
 .pergunta_freq {
