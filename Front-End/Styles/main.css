@@ -162,25 +162,46 @@ main{
     color: #00072C;
     text-align: center;
 }
-.pergunta-frequente{
-    margin-bottom: 8px;
-}
-.pergunta-frequente select{
+
+.caixa-faq {
     width: 100%;
-    padding: 12px 2%;
-    border: 3px solid #123498;
-    border-radius: 8px;
-    background-color: white;
-    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
-}
-.pergunta-frequente select:hover{
-    background-color: #f2f5ff;
-    border-color: #123498;
-    box-shadow: 0 0 5px rgb(18 52 152 / 25%);
+    margin: 0 auto;
 }
 
-.pergunta_freq {
-appearance: none;
+.perguntas-frequentes details {
+    border: 2px solid #123498;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.perguntas-frequentes summary {
+    padding: 18px 20px;
+    color: #00072C;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    transition: background-color 0.2s ease;
+}
+
+.perguntas-frequentes summary:hover,
+.perguntas-frequentes summary:focus-visible {
+    background-color: #f2f5ff;
+}
+
+.perguntas-frequentes details p {
+    padding: 0 20px 20px 20px;
+    color: rgb(16, 92, 173);
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.perguntas-frequentes details[open] > summary {
+    border-bottom: 2px solid #123498;
+    background-color: #f8faff;
 }
 .secao-blog{
     width: 76%;
