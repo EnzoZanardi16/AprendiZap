@@ -3,6 +3,10 @@
     padding: 0%;
 }
 
+body{
+    font-family: 'inter', sans-serif;
+}
+
 #Cabecalho{
     background-color: #00072C;
     display: flex;
