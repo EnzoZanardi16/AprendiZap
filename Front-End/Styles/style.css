@@ -14,14 +14,27 @@
     background-color: #00072C;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
     padding-right: 3%;
+    box-sizing: border-box;
     position: fixed;
     z-index: 100;
 }
 
+#Cabecalho > a{
+    width: 15%;
+    flex: 0 0 15%;
+}
+
 #logo{
     width: 15%;
+}
+
+#Cabecalho a #logo{
+    width: 100%;
+    display: block;
 }
 
 .navegacao{
@@ -48,9 +61,8 @@
 
 .icon{
     font-size: 2.5vw;
+    color: snow;
 }
-
-<<<<<<< HEAD
 
 /* ---------------------------------------------- */
 

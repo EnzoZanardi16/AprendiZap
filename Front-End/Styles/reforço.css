@@ -1,0 +1,188 @@
+.conteudo-principal {               
+    width: 92%;             
+    margin: 0 auto;             
+    padding-top: 15vh;              
+}               
+                
+.introducao {               
+    width: 90%;             
+    padding: 4vh 4vw;               
+    text-align: center;             
+}               
+                
+.introducao h1 {                
+    color: #00072c;             
+    font-size: 3.75vw;              
+    font-weight: 900;               
+}               
+                
+.introducao p {             
+    margin-top: 2vh;                
+    color: #123498;             
+    font-size: 1.67vw;              
+}               
+                
+.filtros {              
+    width: 100%;                
+    margin-top: 4vh;                
+    border: 0.1vw solid #123498;                
+    border-radius: 1vw;             
+    padding: 2vh 1.5vw;             
+}               
+                
+.form-filtros {             
+    display: flex;              
+    flex-wrap: wrap;                
+    gap: 1vw;               
+}               
+                
+.form-filtros input,                
+.form-filtros select {              
+    min-width: 0;               
+    height: 7vh;                
+    border: 0.1vw solid #123498;                
+    border-radius: 0.75vw;              
+    padding: 0 1vw;             
+    background-color: #ffffff;              
+    color: #00072c;             
+    font-size: 1.15vw;              
+}               
+                
+.campo-busca {              
+    flex: 2 1 30%;              
+}               
+                
+.campo-nivel,               
+.campo-vagas,               
+.campo-professor {              
+    flex: 1 1 18%;              
+}               
+                
+.lista-disciplinas {                
+    width: 100%;                
+    margin-top: 7vh;                
+}               
+                
+.titulo-lista h2 {              
+    color: #00072c;             
+    font-size: 2.5vw;               
+    font-weight: 900;               
+}               
+                
+.titulo-lista p {               
+    margin-top: 1vh;                
+    color: #123498;             
+    font-size: 1.25vw;              
+}               
+                
+.linha-disciplinas {                
+    display: grid;              
+    gap: 3vw;               
+    margin-top: 4vh;                
+}               
+                
+.cartao-disciplina {                
+    min-width: 0;               
+    min-height: 46vh;               
+    padding: 3vh 1.6vw;             
+    border: 0.3vw solid #123498;                
+    border-radius: 2vw;             
+    background-color: #ffffff;              
+    display: flex;              
+    flex-direction: column;             
+    gap: 1.2vh;             
+}               
+                
+.cartao-disciplina h3 {             
+    color: #123498;             
+    font-size: 1.9vw;               
+    font-weight: 900;               
+}               
+                
+.cartao-disciplina p {              
+    font-size: 1.1vw;               
+    line-height: 1.2;               
+}               
+                
+.cartao-disciplina .vagas {             
+    color: #123498;             
+    font-weight: 600;               
+}               
+                
+.botao-atendimento {                
+    width: 40%;             
+    min-height: 5.5vh;              
+    margin-top: auto;               
+    border-radius: 0.8vw;               
+    background-color: #123498;              
+    color: #ffffff;             
+    text-decoration: none;              
+    font-size: 0.95vw;              
+    font-weight: 900;               
+    display: flex;              
+    align-items: center;                
+    justify-content: center;                
+    text-align: center;             
+}               
+.botao-atendimento:hover{               
+    border-color: #071f6b;              
+    box-shadow: 0 0 5px #071f6b;                
+    background-color: #00072c;              
+    transition: 0.3s;               
+}               
+.outras-disciplinas {               
+    width: 90%;             
+    margin-top: 4vh;                
+    margin-bottom: 4vh;             
+    padding: 4vh 3vw;               
+    border-radius: 2vw;             
+    background-color: #00072c;              
+    display: flex;              
+    align-items: center;                
+    justify-content: space-between;             
+                    
+}               
+                
+.texto-outras {             
+    width: 65%;             
+}               
+                
+.texto-outras h2 {              
+    color: #ffffff;             
+    font-size: 1.8vw;               
+    font-weight: 900;               
+}               
+                
+.texto-outras p {               
+    margin-top: 1vh;                
+    color: #cdd6f0;             
+    font-size: 1.2vw;               
+}               
+                
+.botao-todas {              
+    width: 25%;             
+    min-height: 7vh;                
+    border: 0.15vw solid #123498;               
+    border-radius: 1vw;             
+    background-color: #ffffff;              
+    color: #123498;             
+    text-decoration: none;              
+    font-size: 1vw;             
+    font-weight: 900;               
+    display: flex;              
+    align-items: center;                
+    justify-content: center;                
+    text-align: center;             
+}               
+.botao-todas:hover{             
+    background-color: #071f6b;              
+}               
+                
+.form-filtros select {              
+    appearance: none;               
+}               
+.form-filtros input:hover,              
+.form-filtros select:hover {                
+    border-color: #071f6b;              
+    box-shadow: 0 0 5px #071f6b;                
+}               
