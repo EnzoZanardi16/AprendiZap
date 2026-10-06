@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>AprendiZap - Disciplinas e Reforço Escolar</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/reforço.css">
+</head>
+<body>
+
+<div class="pagina">
+
+    <header id="Cabecalho">
+        <a href="./main.html"><img id="logo" src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap"></a>
+        <nav class="navegacao">
+            <a href="./main_Professores.html" class="Anav Hnav"><p class="Tnav">PROFESSORES</p></a>
+            <a href="./" class="Anav Hnav"><p class="Tnav">DISCIPLINA</p></a>
+            <a href="./reforço.html" class="Anav Hnav"><p class="Tnav">REFORÇO</p></a>
+            <a href="./FAQ.html" class="Anav Hnav"><p class="Tnav">FAQ</p></a>
+            <a href="./" class="Anav Hnav"><p class="Tnav">BLOG</p></a>
+        </nav>
+        <nav class="navegacao">
+            <a href="./" class="icon Hnav"><i class="fa-solid fa-user" style="color: snow;"></i></a>
+            <a href="./Solicitacao_de_reforco.html" class="icon Hnav"><i class="fa-solid fa-envelope" style="color: snow;"></i></a>
+            <a href="" class="icon Hnav"><i class="fa-solid fa-bell" style="color: snow;"></i></a>
+            
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="introducao">
+            <h1>DISCIPLINAS E REFORÇO ESCOLAR</h1>
+            <p>Encontre disciplinas e conteúdos com atendimento voluntário disponível.</p>
+        </section>
+
+        <section class="filtros">
+            <form class="form-filtros" action="#" method="get">
+                <input class="campo-busca" type="text" name="busca" placeholder="Buscar disciplina ou conteúdo">
+
+                <select class="campo-nivel" name="nivel">
+                    <option>Nível de ensino</option>
+                    <option>Ensino Fundamental</option>
+                    <option>Fundamental II</option>
+                    <option>Ensino Médio</option>
+                </select>
+
+                <select class="campo-vagas" name="vagas">
+                    <option>Com vagas disponíveis</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select>
+
+                <select class="campo-professor" name="professor">
+                    <option>Professor voluntário</option>
+                    <option>Com professor</option>
+                    <option>Todos</option>
+                </select>
+            </form>
+        </section>
+
+        <section class="lista-disciplinas" id="disciplinas">
+            <div class="titulo-lista">
+                <h2>DISCIPLINAS COM ATENDIMENTO</h2>
+                <p>Selecione uma disciplina para consultar conteúdos, voluntários e horários disponíveis.</p>
+            </div>
+
+            <div class="linha-disciplinas">
+                <div class="cartao-disciplina">
+                    <h3>MATEMÁTICA</h3>
+                    <p><b>Nível de ensino:</b> Fundamental II e Ensino Médio</p>
+                    <p>Conteúdos disponíveis: aritmética, álgebra, geometria e funções</p>
+                    <p>Professores voluntários relacionados: 4</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 8</p>
+                    <p>Reforço para resolução de exercícios, revisão de conteúdos e preparação para avaliações.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+
+                <div class="cartao-disciplina">
+                    <h3>PORTUGUÊS</h3>
+                    <p><b>Nível de ensino:</b> Fundamental II e Ensino Médio</p>
+                    <p>Conteúdos disponíveis: gramática, interpretação de texto, redação e literatura</p>
+                    <p>Professores voluntários relacionados: 3</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 6</p>
+                    <p>Apoio em leitura, escrita, produção textual e revisão dos principais tópicos da língua portuguesa.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+            </div>
+
+            <div class="linha-disciplinas">
+                <div class="cartao-disciplina">
+                    <h3>HISTÓRIA</h3>
+                    <p><b>Nível de ensino:</b> Fundamental II e Ensino Médio</p>
+                    <p>Conteúdos disponíveis: História do Brasil, História Geral e cidadania</p>
+                    <p>Professores voluntários relacionados: 2</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 5</p>
+                    <p>Revisão de períodos históricos, interpretação de processos sociais e apoio para provas e trabalhos.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+
+                <div class="cartao-disciplina">
+                    <h3>GEOGRAFIA</h3>
+                    <p><b>Nível de ensino:</b> Fundamental II e Ensino Médio</p>
+                    <p>Conteúdos disponíveis: cartografia, geografia física, população e geopolítica</p>
+                    <p>Professores voluntários relacionados: 2</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 4</p>
+                    <p>Reforço em leitura de mapas, espaço geográfico, sociedade, território e temas ambientais.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+            </div>
+
+            <div class="linha-disciplinas">
+                <div class="cartao-disciplina">
+                    <h3>CIÊNCIAS</h3>
+                    <p><b>Nível de ensino:</b> Ensino Fundamental</p>
+                    <p>Conteúdos disponíveis: matéria e energia, corpo humano, ambiente e astronomia</p>
+                    <p>Professores voluntários relacionados: 3</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 7</p>
+                    <p>Apoio interdisciplinar para compreender fenômenos naturais e conteúdos introdutórios das ciências.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+
+                <div class="cartao-disciplina">
+                    <h3>BIOLOGIA</h3>
+                    <p><b>Nível de ensino:</b> Ensino Médio</p>
+                    <p>Conteúdos disponíveis: citologia, genética, ecologia, evolução e fisiologia</p>
+                    <p>Professores voluntários relacionados: 2</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 5</p>
+                    <p>Reforço em conceitos biológicos, resolução de exercícios e preparação para avaliações.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+            </div>
+
+            <div class="linha-disciplinas">
+                <div class="cartao-disciplina">
+                    <h3>FÍSICA</h3>
+                    <p><b>Nível de ensino:</b> Ensino Médio</p>
+                    <p>Conteúdos disponíveis: mecânica, eletricidade, óptica, ondas e termologia</p>
+                    <p>Professores voluntários relacionados: 3</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 6</p>
+                    <p>Atendimento para teoria, interpretação de problemas e desenvolvimento de cálculos passo a passo.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+
+                <div class="cartao-disciplina">
+                    <h3>QUÍMICA</h3>
+                    <p><b>Nível de ensino:</b> Ensino Médio</p>
+                    <p>Conteúdos disponíveis: química geral, estequiometria, soluções e química orgânica</p>
+                    <p>Professores voluntários relacionados: 2</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 4</p>
+                    <p>Apoio em conceitos, cálculos químicos, exercícios e revisão de conteúdos para provas.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+            </div>
+
+            <div class="linha-disciplinas">
+                <div class="cartao-disciplina">
+                    <h3>INGLÊS</h3>
+                    <p><b>Nível de ensino:</b> Fundamental II e Ensino Médio</p>
+                    <p>Conteúdos disponíveis: vocabulário, gramática, leitura, escrita e conversação</p>
+                    <p>Professores voluntários relacionados: 3</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 6</p>
+                    <p>Prática guiada para desenvolver compreensão, comunicação e revisão dos conteúdos escolares.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+
+                <div class="cartao-disciplina">
+                    <h3>INFORMÁTICA</h3>
+                    <p><b>Nível de ensino:</b> Fundamental II, Ensino Médio e iniciação</p>
+                    <p>Conteúdos disponíveis: informática básica, ferramentas de escritório, internet e lógica</p>
+                    <p>Professores voluntários relacionados: 4</p>
+                    <p class="vagas"><b>Vagas/atendimentos disponíveis:</b> 8</p>
+                    <p>Apoio para uso de tecnologias, ferramentas digitais e desenvolvimento de conhecimentos básicos de computação.</p>
+                    <a class="botao-atendimento" href="#">VER ATENDIMENTOS</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="outras-disciplinas">
+            <div class="texto-outras">
+                <h2>ENTRE OUTRAS DISCIPLINAS</h2>
+                <p>A plataforma poderá incluir novas áreas conforme houver professores voluntários, conteúdos e horários disponíveis.</p>
+            </div>
+            <a class="botao-todas" href="#">VER TODAS AS DISCIPLINAS</a>
+        </section>
+
+    </main>
+
+     <footer class="rodape">
+    <div class="rodape-conteudo">
+
+        <div class="rodape-apresentacao">
+            <img src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
+
+            <p>
+                Conhecimento que conecta. Pessoas que transformam.
+                Uma comunidade para aprender e compartilhar.
+            </p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h2>Institucional</h2>
+
+            <a href="index.html#sobre">Conheça o projeto</a>
+            <a href="index.html#faq">Perguntas frequentes</a>
+            <a href="voluntario.html">Como participar</a>
+        </div>
+
+        <div class="rodape-coluna">
+            <h2>Aprenda</h2>
+
+            <a href="disciplinas.html">Nossas disciplinas</a>
+            <a href="professores.html">Nossos professores</a>
+            <a href="solicitar.html">Solicitar reforço</a>
+            <a href="blog.html">Blog e artigos</a>
+        </div>
+
+        <div class="rodape-coluna">
+            <h2>Informações</h2>
+
+            <p>
+                Os formulários são demonstrativos. Os dados digitados
+                não são enviados nem armazenados pelo projeto.
+            </p>
+
+            <p>
+                Projeto acadêmico demonstrativo. Perfis, vagas,
+                indicadores e depoimentos são ilustrativos.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="rodape-final">
+        AprendiZap · Projeto acadêmico demonstrativo ·
+        Aprender é melhor quando é para todos.
+    </div>
+</footer>
+</div>
+<script src="https://kit.fontawesome.com/08621cdf64.js" crossorigin="anonymous"></script>
+</body>
+</html>

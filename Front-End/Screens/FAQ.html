@@ -6,54 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - AprendiZap</title>
     <link rel="stylesheet" href="/Front-End/Styles/style.css">
+    <link rel="stylesheet" href="/Front-End/Styles/FAQ.css">
 </head>
 
 <body>
 
     <header id="Cabecalho">
-
-        <img id="logo" src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
-
+        <a href="./main.html"><img id="logo" src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap"></a>
         <nav class="navegacao">
-
-            <a href="" class="Anav Hnav">
-                <p class="Tnav">PROFESSORES</p>
-            </a>
-
-            <a href="" class="Anav Hnav">
-                <p class="Tnav">DISCIPLINA</p>
-            </a>
-
-            <a href="" class="Anav Hnav">
-                <p class="Tnav">REFORÇO</p>
-            </a>
-
-            <a href="" class="Anav Hnav">
-                <p class="Tnav">FAQ</p>
-            </a>
-
-            <a href="" class="Anav Hnav">
-                <p class="Tnav">BLOG</p>
-            </a>
-
+            <a href="./main_Professores.html" class="Anav Hnav"><p class="Tnav">PROFESSORES</p></a>
+            <a href="./" class="Anav Hnav"><p class="Tnav">DISCIPLINA</p></a>
+            <a href="./reforço.html" class="Anav Hnav"><p class="Tnav">REFORÇO</p></a>
+            <a href="./FAQ.html" class="Anav Hnav"><p class="Tnav">FAQ</p></a>
+            <a href="./" class="Anav Hnav"><p class="Tnav">BLOG</p></a>
         </nav>
-
         <nav class="navegacao">
-
-            <a href="" class="icon Hnav">
-                <i class="fa-solid fa-user"></i>
-            </a>
-
-            <a href="" class="icon Hnav">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-
-            <a href="" class="icon Hnav">
-                <i class="fa-solid fa-bell"></i>
-            </a>
-
+            <a href="./" class="icon Hnav"><i class="fa-solid fa-user" style="color: snow;"></i></a>
+            <a href="./Solicitacao_de_reforco.html" class="icon Hnav"><i class="fa-solid fa-envelope" style="color: snow;"></i></a>
+            <a href="" class="icon Hnav"><i class="fa-solid fa-bell" style="color: snow;"></i></a>
+            
         </nav>
-
     </header>
 
     <div id="faq">
@@ -178,44 +150,56 @@
 
     </div>
 
-    <footer id="rodape">
+     <footer class="rodape">
+    <div class="rodape-conteudo">
 
-        <img
-            src="/Front-End/Assets/Logo-principal.png"
-            alt="Logo AprendiZap"
-            class="logo-rodape"
-        >
+        <div class="rodape-apresentacao">
+            <img src="/Front-End/Assets/Logo-principal.png" alt="Logo AprendiZap">
 
-        <div class="rodape-coluna">
-
-            <h3>AprendiZap</h3>
-
-            <p>Professores</p>
-            <p>Disciplinas</p>
-            <p>Reforço</p>
-
+            <p>
+                Conhecimento que conecta. Pessoas que transformam.
+                Uma comunidade para aprender e compartilhar.
+            </p>
         </div>
 
         <div class="rodape-coluna">
+            <h2>Institucional</h2>
 
-            <h3>Informações</h3>
-
-            <p>FAQ</p>
-            <p>Blog</p>
-            <p>Contato</p>
-
+            <a href="index.html#sobre">Conheça o projeto</a>
+            <a href="index.html#faq">Perguntas frequentes</a>
+            <a href="voluntario.html">Como participar</a>
         </div>
 
         <div class="rodape-coluna">
+            <h2>Aprenda</h2>
 
-            <h3>Redes sociais</h3>
-
-            <p>Instagram</p>
-            <p>Facebook</p>
-
+            <a href="disciplinas.html">Nossas disciplinas</a>
+            <a href="professores.html">Nossos professores</a>
+            <a href="solicitar.html">Solicitar reforço</a>
+            <a href="blog.html">Blog e artigos</a>
         </div>
 
-    </footer>
+        <div class="rodape-coluna">
+            <h2>Informações</h2>
+
+            <p>
+                Os formulários são demonstrativos. Os dados digitados
+                não são enviados nem armazenados pelo projeto.
+            </p>
+
+            <p>
+                Projeto acadêmico demonstrativo. Perfis, vagas,
+                indicadores e depoimentos são ilustrativos.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="rodape-final">
+        AprendiZap · Projeto acadêmico demonstrativo ·
+        Aprender é melhor quando é para todos.
+    </div>
+</footer>
 
     <script
         src="https://kit.fontawesome.com/08621cdf64.js"
